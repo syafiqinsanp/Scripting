@@ -1,10 +1,9 @@
-systeminfo
+lscpu
 
-systeminfo | findstr /C:"OS Name"
-systeminfo | findstr /C:"OS Version"
+uname -r
 
-ipconfig
+ifconfig
 
-df -h
+free -h
 
-systeminfo | findstr /C:"Total Physical Memory"
+df -b
